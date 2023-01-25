@@ -1,5 +1,5 @@
-function chunkArrayInGroups(arr, size, chunkedArray = []) {
-  const rest = Math.ceil(arr.length / size);
+function chunkArrayInGroups(arr, size, chunkedArray = [], rest = 0) {
+  rest = Math.ceil(arr.length / size);
   if (rest === 0) {
     return chunkedArray;
   }
